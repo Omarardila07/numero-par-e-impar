@@ -6,9 +6,32 @@ body {
     padding: 0;
 }
 
+#botones {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #3498db; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#botones:hover {
+    background-color: #2980b9; /* Cambia el color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Escala el botón ligeramente */
+}
+
+#botones:active{
+    transform: scale(0.95);
+}
+
 h1 {
     color: #333;
     margin-top: 30px;
+    font-family: cursive;
 }
 
 #numeroInput {
@@ -17,11 +40,37 @@ h1 {
     border: 2px solid #ccc;
     border-radius: 5px;
     margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db; /* Color del borde normal */
+    border-radius: 5px;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+#numeroInput:hover {
+    border-color: #2980b9; /* Cambia el color del borde al pasar el mouse */
+    transform: scale(1.02); /* Escala el input ligeramente */
+}
+
+#numeroInput:focus {
+    border-color: #e74c3c; /* Cambia el color del borde cuando está enfocado */
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5); /* Agrega una sombra cuando está enfocado */
+}
+
+#numeroInput::placeholder {
+    color: #7f8c8d; /* Color del texto de marcador de posición */
+    opacity: 0; /* Inicialmente, el texto de marcador de posición es transparente */
+    transition: opacity 0.3s ease;
+}
+
+#numeroInput:focus::placeholder {
+    opacity: 1; /* Muestra el texto de marcador de posición cuando el input está enfocado */
 }
 
 #resultado {
     font-size: 24px;
     margin: 20px;
+    font-family: cursive;
 }
 
 .h12 {
@@ -42,6 +91,33 @@ h1 {
     border-radius: 5px;
     margin: 0 10px;
     width: 135px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db; /* Color del borde normal */
+    border-radius: 5px;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.input1:hover {
+    border-color: #2980b9; /* Cambia el color del borde al pasar el mouse */
+    transform: scale(1.02); /* Escala el input ligeramente */
+}
+
+/* Estilos cuando el input está enfocado */
+.input1:focus {
+    border-color: #e74c3c; /* Cambia el color del borde cuando está enfocado */
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5); /* Agrega una sombra cuando está enfocado */
+}
+
+/* Animación cuando se escribe en el input */
+.input1::placeholder {
+    color: #7f8c8d; /* Color del texto de marcador de posición */
+    opacity: 0; /* Inicialmente, el texto de marcador de posición es transparente */
+    transition: opacity 0.3s ease;
+}
+
+.input1:focus::placeholder {
+    opacity: 1; /* Muestra el texto de marcador de posición cuando el input está enfocado */
 }
 
 .botonsumar {
@@ -51,6 +127,7 @@ h1 {
 #resultado1 {
     font-size: 24px;
     margin: 20px;
+    font-family: cursive;
 }
 
 .h14 {
@@ -64,9 +141,38 @@ h1 {
     border: 2px solid #ccc;
     border-radius: 5px;
     margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db; /* Color del borde normal */
+    border-radius: 5px;
+    transition: border-color 0.3s ease, transform 0.2s ease;
 }
+
+        /* Estilos cuando el mouse está sobre el input */
+        #numeroInput1:hover {
+            border-color: #2980b9; /* Cambia el color del borde al pasar el mouse */
+            transform: scale(1.02); /* Escala el input ligeramente */
+        }
+
+        /* Estilos cuando el input está enfocado */
+        #numeroInput1:focus {
+            border-color: #e74c3c; /* Cambia el color del borde cuando está enfocado */
+            box-shadow: 0 0 5px rgba(231, 76, 60, 0.5); /* Agrega una sombra cuando está enfocado */
+        }
+
+        /* Animación cuando se escribe en el input */
+        #numeroInput1::placeholder {
+            color: #7f8c8d; /* Color del texto de marcador de posición */
+            opacity: 0; /* Inicialmente, el texto de marcador de posición es transparente */
+            transition: opacity 0.3s ease;
+        }
+
+        #numeroInput1:focus::placeholder {
+            opacity: 1; /* Muestra el texto de marcador de posición cuando el input está enfocado */
+        }
 
 #resultado2 {
     font-size: 24px;
     margin: 20px;
+    font-family: cursive;
 }
