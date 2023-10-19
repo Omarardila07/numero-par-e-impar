@@ -9,16 +9,25 @@ function verificarParImpar() {
     }
 }
 
-function sumarNumeros() {
-    var numero1 = parseFloat(document.getElementById('numero1').value);
-    var numero2 = parseFloat(document.getElementById('numero2').value);
-    var resultadoElement = document.getElementById('resultado1');
+function sumarLista() {
+    var suma = 0;
+    var resultado2 = document.getElementById('resultado1');
+    var lista = document.getElementById('listanumeros');
+    var boton = document.getElementById('botones');
 
-    if (!isNaN(numero1) && !isNaN(numero2)) {
-        var suma = numero1 + numero2;
-        resultadoElement.innerHTML = "La suma de " + numero1 + " y " + numero2 + " es " + suma + ".";
-    } else {
-        resultadoElement.innerHTML = "Por favor, ingrese dos números válidos.";
+    if (boton.getAttribute("disabled") === null ) {
+
+    for (var x=1; x <=10; x++) {
+        suma += x;
+        var listItem = document.createElement("li");
+        listItem.textContent = x;
+
+        lista.appendChild(listItem);
+    }
+
+    resultado2.innerHTML = "la suma de los números del 1 al 10 es: " + suma;
+
+    boton.setAttribute("disabled" , "true" ); 
     }
 }
 
